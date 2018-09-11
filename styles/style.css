@@ -2,61 +2,104 @@
 
 
 /* Give the header element a background color */
-
+header {
+  background: #98f442;
+}
 
 /* Center everything in the header and footer */
 
-
+header, footer {
+  text-align: center;
+}
 /* All text to Helvetica */
-
+header, body {
+  font-family: Helvetica;
+}
 
 /* All links default color is gray*/
-
+a {
+  color: grey;
+}
 
 /* All links on hover color red*/
-
+a:hover {
+  color:red;
+}
 
 /* All Links visted color black*/
-
+a:visited {
+  color: black;
+}
 
 /* Footer disclaimer text to be .5 em*/
-
+footer {
+  font-size: 0.5em;
+}
 
 /* Remove bullet points from header navigation links */
-
+ul {
+  list-style-type: none;
+}
 
 /* All Post's Comment Links Italicized, Orange and Remove the Underline */
-
+a[href *= "comments"] {
+  color: orange;
+  font-style: italic;
+  text-decoration: none;
+}
 
 /* All Post's Comment Links Show Underline on Hover */
-
+a[href *= "comments"]:hover {
+  text-decoration: underline;
+}
 
 /* All Post's Author's Links Bold and Blue, with no Underline */
-
+a[href *= "shadow"], a[href *= "whiskers"], a[href *= "patches"], a[href *= "bonkers"], a[href *= "smokey"], a[href *= "astrid"] {
+  text-decoration: none;
+  font-weight: bold;
+  color: blue;
+}
 
 /* Article Paragraph Text should have line height of 200% */
-
+article {
+  line-height: 200%
+}
 
 /* The First Letter of each Article be 2em */
-
+article::first-letter {
+  font-size: 2em;
+}
 
 /* The First Image in every Article should have Rounded Corners*/
-
+article section img:first-of-type {
+  border-radius: 80%
+}
 
 /* The First Top Cat Section Should have a Golden Background */
-
+#top-cats section:first-of-type{
+  background: gold;
+}
 
 /* The 2nd Top Cat Section Should have a Silver/gray Background */
+#top-cats section + section{
+  background: silver;
+}
 
-
-/* The 3rd Top Section Cat Should have a Bronze/brown Background */
-
+/* main:last-child < - doesn't work there is only one main so you can't use main: last_child.   border-radius: 80%
+The 3rd Top Section Cat Should have a Bronze/brown Background */
+main > section{
+  background: #cd7f32;
+}
 
 /* Every other Article's Post-Content Background Color to a Light Grey */
-
+article:nth-of-type(even) {
+ background-color: #808080;
+}
 
 /* All Top Kitten's Profile Photos Rounded */
-
+img {
+  border-radius: 50%
+}
 
 /*** BONUS ***/
 
