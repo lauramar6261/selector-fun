@@ -97,7 +97,7 @@ article:nth-of-type(even) {
 }
 
 /* All Top Kitten's Profile Photos Rounded */
-img {
+img[alt="profile photo"] {
   border-radius: 50%
 }
 
